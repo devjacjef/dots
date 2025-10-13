@@ -1,0 +1,55 @@
+[{
+    //
+    "output": ["HDMI-A-1"],
+    "height": 34,
+    "spacing": 4,
+
+    "modules-left": [
+        // ...
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "mpris",
+        "tray",
+        "wireplumber"
+    ],
+    "mpris": {
+ 	"format": "{status_icon} {dynamic}",
+        "interval": 1,
+	"status-icons": {
+		"playing": "󰐊",
+		"paused": "󰏤",
+		"stopped": "󰓛"
+	},
+	"dynamic-order": ["title", "artist"],
+	"ignored-players": ["firefox"]
+    },
+    "wireplumber": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{volume:>3}%",
+        "format-bluetooth": "{volume:>3}% ",
+        "format-bluetooth-muted": " ",
+        "format-muted": " ",
+        "format-icons": {
+            "headphone": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            // Using `nf-md` nerd font icons
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+
+    "clock": {
+        "timezone": "Europe/London",
+        "tooltip-format": "{:%A, %B %d, %Y}",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+}]

@@ -1,0 +1,21 @@
+# Logo key
+set $mod Mod4
+
+# Direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Term
+set $term alacritty
+
+# Menu
+set $menu wofi --show drun
+
+# Wallpaper
+set $wallpaper /home/jackj/.config/sway/howl004.jpg fill
+
+# Long, Lat
+set $lat 56.5
+set $long -2.97

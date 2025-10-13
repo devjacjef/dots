@@ -1,0 +1,17 @@
+anchor=top-right
+font=Inconsolata
+
+icons=1
+markup=1
+
+padding=5
+
+background-color=#282828
+progress-color=#689d6a
+text-color=#ebdbb2
+
+border-color=#ebdbb2
+border-size=2
+border-radius=2
+
+max-visible=5

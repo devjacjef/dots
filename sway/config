@@ -1,0 +1,21 @@
+# Jackj's Sway Config
+include ~/.config/sway/vars
+include ~/.config/sway/keybinds
+
+gaps inner 4
+gaps outer 4
+
+# Default monitor settings
+output * mode 1920x1080@144Hz
+output * bg $wallpaper
+
+default_border none
+
+exec waybar
+exec mako
+
+exec wlsunset -l $lat -L $long -o HDMI-A-1 
+
+workspace 3
+exec ebook-viewer
+
