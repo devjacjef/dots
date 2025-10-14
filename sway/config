@@ -16,6 +16,5 @@ exec mako
 
 exec wlsunset -l $lat -L $long -o HDMI-A-1 
 
-workspace 3
-exec ebook-viewer
-
+# Open Emacs first thing
+exec emacs
